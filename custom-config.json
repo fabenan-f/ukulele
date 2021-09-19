@@ -1,0 +1,58 @@
+{
+    "totalAmountofServices": 10,
+    "serviceConfigs": [
+        {
+            "service": "shippingservice",
+            "config": {
+                "namespace": "shippingservice",
+                "dependencies": [
+                    {
+                        "dependency": "github.com/gorilla/mux",
+                        "version": "1.2"
+                    },
+                    {
+                        "dependency": "go.opentelemetry.io/otel",
+                        "version": "2.1"
+                    }
+                ],
+                "unitsAttributes": [
+                    {
+                        "attribute": "payload_size",
+                        "unit": "kb"
+                    },
+                    {
+                        "attribute": "timeout",
+                        "unit": "ms"
+                    }
+                ]
+            }
+        },
+        {
+            "service": "adservice",
+            "config": {
+                "namespace": "adservice",
+                "dependencies": [
+                    {
+                        "dependency": "github.com/gorilla/mux",
+                        "version": "1.2"
+                    },
+                    {
+                        "dependency": "go.opentelemetry.io/otel",
+                        "version": "2.1"
+                    }
+                ],
+                "unitsAttributes": [
+                    {
+                        "attribute": "payload_size",
+                        "unit": "kb"
+                    },
+                    {
+                        "attribute": "timeout",
+                        "unit": "ms"
+                    }
+                ]
+            }
+        }
+    ]
+}
+
